@@ -1,0 +1,113 @@
+html, *{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(rgb(175, 6, 6), rgb(94, 5, 5), rgb(146, 45, 45));
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.cabecalho{
+    border-bottom: 1px solid rgb(19, 18, 18);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 81px;
+    background-image: linear-gradient(rgb(175, 6, 6), rgb(94, 5, 5), rgb(146, 45, 45));
+}
+
+ul{
+    list-style-type: none;
+    font-size: 22px;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+li{
+    box-shadow: 1px 1px 1px 1px rgb(22, 22, 22);
+    border-radius: 6px;
+    padding: 5px;
+}
+li:hover{
+    background-color: rgb(255, 196, 0);
+    transition: 0.5s;
+}
+
+li, a{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover{
+    font-weight: 800;
+    color: rgb(12, 11, 11);
+}
+
+.cabecalho img{
+    border-radius: 50%;
+    box-shadow: 4px 1px 1px 2px rgb(22, 20, 20);
+    height: 70px;
+    margin-left: 20px;
+}
+
+.title{
+    text-align: center;
+    background-color: rgb(255, 196, 0);
+    border-bottom: 0.1px solid rgb(22, 20, 20);
+    box-shadow: 1px 0.5px 3px black;
+    color: black;
+    text-shadow: 1px 2px 2px  rgb(94, 88, 88);
+}
+
+
+.video{
+    background-color: black;
+    width: 100%;
+
+}
+
+video{
+    height: 500px;
+    width: 100%;
+}
+
+.content img{
+    height: 700px;
+}
+
+.tony-stark img{
+    position: absolute;
+    height: 180px;
+    right: 50px;
+    top: 665px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px 2px rgb(12, 12, 12);
+    margin-right: 5px;
+
+}
+
+.frases{
+    font-size: 19px;
+}
+
+.rodape img{
+    height: 80px;
+}
+
+.rodape{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    color: #dddddd;
+    font-size: 20px;
+    background: black;
+    margin-bottom: -20px;
+    }
