@@ -18,31 +18,31 @@ body{
     background-image: linear-gradient(rgb(175, 6, 6), rgb(94, 5, 5), rgb(146, 45, 45));
 }
 
-ul{
+.menu ul{
     list-style-type: none;
     font-size: 22px;
     display: flex;
     padding: 0;
     margin: 0;
 }
-li{
+.menu li{
     box-shadow: 1px 1px 1px 1px rgb(22, 22, 22);
     border-radius: 6px;
     padding: 5px;
 }
-li:hover{
+.menu li:hover{
     background-color: rgb(255, 196, 0);
     transition: 0.5s;
 }
 
-li, a{
+.menu li, a{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0 10px;
     color: #fff;
     text-decoration: none;
 }
 
-a:hover{
+.menu a:hover{
     font-weight: 800;
     color: rgb(12, 11, 11);
 }
@@ -110,4 +110,80 @@ video{
     font-size: 20px;
     background: black;
     margin-bottom: -20px;
+    }
+
+
+    .tarefas{
+        height: 500px;
+        background-image: url("../images/jarvis1.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: flex;
+        align-items: center;
+    }
+
+    .tarefas-div{
+        position: relative;
+        width: 93vh;
+        background-color: rgba(4, 61, 61, 0.719);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px auto;
+        padding-bottom: 8px;
+        border-radius: 8px;
+    }
+
+    .tarefas-div input{
+        height: 33px;
+        border-radius: 5px;
+        width: 250px;
+        padding: 4px;
+    }
+    .task-title{
+        background-color: rgba(4, 61, 61, 0.719);
+        color: #fff;
+    }
+
+    .bi-trash{
+        color: rgb(146, 6, 6);
+    }
+    .bi-pencil-square{
+        color: rgb(23, 219, 66);
+    }
+
+    .bi-plus{
+        font-size: 23px;
+        border-radius: 5px;
+        padding: 0px 3px;
+        font-weight: bolder;
+        color: black;
+        background-color: rgb(12, 239, 247);
+    }
+    .bi-search{
+        background-color: rgb(12, 239, 247);
+        font-size: 18.5px;
+        color: black;
+        border-radius: 5px;
+        padding: 3px;
+        padding-right: 0;
+    }
+
+    .add-div{
+        margin-bottom: 20px;
+    }
+
+    .task-list{
+        box-shadow: 1px 1px 1px black;
+        font-size: 20px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+   .tarefas-div ul{
+        list-style-type: none;
+    }
+    .task-list span{
+        color: white;
     }
