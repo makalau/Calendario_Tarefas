@@ -147,6 +147,7 @@ height: 50px;
     margin: 0px auto;
     border-radius: 8px;
     box-shadow: 1px 1px 1px black;
+    padding: 3px 3px 8px 3px;
 }
 
 .tarefas-div input{
@@ -195,16 +196,24 @@ height: 50px;
 
 .add-div{
     margin-top: 15px;
-    background-color: rgba(19, 16, 16, 0.884);
+    background-color: rgba(14, 12, 12, 0.884);
     margin-bottom: 20px;
     padding: 5px;
     border-radius: 8px;
-    box-shadow: 1px 1px 1px white;
+    border: 0.2px solid rgba(230, 226, 226, 0.842);
     cursor: pointer;
 }
+.add-div:hover{
+    box-shadow: 0px 0px 35px aqua,0px 0px 15px aqua;
+    background-color: aqua;
+}
+.add-div span:hover{
+    font-weight: bolder;
+    text-shadow: 0px 0px 25px aqua, 0px 0px 10px aqua;
+}
+
 .add-div span{
     color: #fff;
-    text-shadow: 1px 1px 1px black;
     font-weight: bold;
 }
 .task-list{
@@ -238,7 +247,8 @@ align-items: center;
 margin: 0px auto;
 border-radius: 8px;
 box-shadow: 1px 1px 1px black;
-padding-bottom: 10px;
+padding-bottom: 70px;
+
 }
 
 
@@ -278,11 +288,11 @@ font-size: 20px;
 }
 
 .botao-reator img{
-    position: relative;
+    position: absolute;
     width: 50px;
     height: 50px;
-    top: 5px;
-    left: 185px;
+    top: 295px;
+    left: 287px;
     animation: loading 10s linear infinite;
     cursor: pointer;
 }
@@ -303,6 +313,20 @@ font-size: 20px;
     background-attachment: fixed;
     display: flex;
     align-items: center;
+}
+.descricao{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 20px 5px 25px 5px;
+    border-radius: 12px;
+    position: relative;
+    width: 520px;
+    padding-left: 20px;
+    height: 200px;
+    background-color: rgba(4, 61, 61, 0.719);
+    color: white;
+    font-size: 20px;
+    box-shadow: 0px 0px 20px aqua, 0px 0px 15px aqua;
+
 }
 
 @keyframes loading{

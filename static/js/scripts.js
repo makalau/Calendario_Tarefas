@@ -1,6 +1,6 @@
 
 function add_tarefas(){
-    window.location.href = "tarefas"
+    window.location.href = "tarefa"
 }
 
 function enviar(){
@@ -12,3 +12,8 @@ function enviar(){
 function editar(){
     window.location.href = "editar"
 }
+
+function home(){
+    window.location.href="/"
+}
+

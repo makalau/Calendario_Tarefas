@@ -13,20 +13,23 @@
                 </div>
                 <div class="search-div">
                     <i class="bi bi-search" onclick="enviar();"></i>
-                    <form style="display: inline-block;" class="formulario" spellcheck="false" autocomplete="off">
+                    <form method="GET" style="display: inline-block;" class="formulario" spellcheck="false" autocomplete="off">
+                        {% csrf_token %}
                     <input type="text" id="search" placeholder="Busque a tarefa">
                     </form>
                 </div>
                 <hr>
+            {% if consulta %}
                 <ul class="task-list">
                     <li class="task-item">
-                        <span>Titulo da Tarefa</span>
+                        <span><a href="/task/{{task.id}}">{{task.title}}</a></span>
                         <div>
-                        <span onclick="editar()"><i class="bi bi-pencil-square"></i></span>
+                        <span><i class="bi bi-pencil-square"></i></span>
                         <span><i class="bi bi-trash"></i></span>
                         </div>
                     </li>
                 </ul>
+            {% endif %}
             </div>
         </section>
         <section class="content">
