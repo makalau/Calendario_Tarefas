@@ -66,6 +66,7 @@ cursor: Pointer;
     animation: loading 0.2s linear infinite;
 }
 
+
 .title{
 text-align: center;
 background-color: rgb(255, 196, 0);
@@ -89,6 +90,19 @@ width: 100%;
 
 .content img{
 height: 700px;
+}
+
+.relatorio{
+    width: 100%;
+    min-height: 500px;
+    background-image: url('https://img.myloview.com.br/quadros/grafico-de-acoes-de-mercado-fundo-financeiro-700-55825444.jpg'); 
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    object-fit: 30% 20%;
+    display: flex;
+    align-items: center;
+    color: white;
 }
 
 .tony-stark img{
@@ -127,7 +141,9 @@ height: 50px;
 
 
 .tarefas{
-    height: 500px;
+    display: block;
+    position: relative;
+    min-height: 500px;
     background-image: url("../images/jarvis1.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -178,6 +194,11 @@ height: 50px;
     cursor: pointer;
     padding: 2px;
 }
+.task-list span{
+
+    color: #fff;
+    font-size: 18px;
+}
 
 .bi-search{
     position: relative;
@@ -222,18 +243,25 @@ height: 50px;
     background-color: rgba(4, 61, 61, 0.719);
     font-size: 20px;
     padding: 5px;
-    margin: 0;
+    margin-bottom: 0;
+    border: 1px solid black;
 }
 
 .task-item{
 display: flex;
 justify-content: space-between;
 }
+
 .tarefas-div ul{
 list-style-type: none;
 }
+.task-list a:hover{
+    border-bottom: 1px solid aqua;
+    color:rgb(188, 252, 230);
+}
 .task-list span{
-color: white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
 }
 
 .insert-div{

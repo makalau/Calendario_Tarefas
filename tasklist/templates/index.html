@@ -15,20 +15,22 @@
                     <i class="bi bi-search" onclick="enviar();"></i>
                     <form method="GET" style="display: inline-block;" class="formulario" spellcheck="false" autocomplete="off">
                         {% csrf_token %}
-                    <input type="text" id="search" placeholder="Busque a tarefa">
+                    <input type="text" id="search" name="search" placeholder="Busque a tarefa">
                     </form>
                 </div>
                 <hr>
             {% if consulta %}
+                {% for task in consulta %}
                 <ul class="task-list">
                     <li class="task-item">
-                        <span><a href="/task/{{task.id}}">{{task.title}}</a></span>
+                        <span><a href="/task/{{task.id}}">ID: {{task.id}}&nbsp;&nbsp;&nbsp;&nbsp;Titulo: {{task.title}}</a></span>
                         <div>
-                        <span><i class="bi bi-pencil-square"></i></span>
-                        <span><i class="bi bi-trash"></i></span>
+                        <span><i class="bi bi-pencil-square" onclick="editar('{{task.id}}');"></i></span>
+                        <span  onclick="deletar('{{task.id}}');"><i class="bi bi-trash"></i></span>
                         </div>
                     </li>
                 </ul>
+                {% endfor %}
             {% endif %}
             </div>
         </section>

@@ -32,5 +32,21 @@ def relatorios(request):
     return render(request, "relatorio.html")
 
 
-def editar(request):
-    return render(request, "editar.html")
+def editar(request, id):
+    consulta = get_object_or_404(Tarefas, pk=id)
+    form = TaskForm(instance=consulta)   
+    if request.method == "POST":
+        form = TaskForm(request.POST, instance=consulta)
+        if form.is_valid():
+            consulta.save()
+            return redirect("/")
+        else:
+            return render(request, "editar.html", {"form":form, "consulta":consulta})
+    else:
+        return render(request, "editar.html", {"form":form, "consulta":consulta})
+
+
+def deletar(request, id):
+    campo = get_object_or_404(Tarefas, pk=id)
+    campo.delete()
+    return redirect('/')

@@ -6,5 +6,6 @@ urlpatterns = [
     path('task/<int:id>', views.taskview),
     path('tarefa', views.tarefa),
     path('relatorios', views.relatorios),
-    path('editar', views.editar),
+    path('editar/<int:id>', views.editar),
+    path('deletar/<int:id>', views.deletar)
 ]
