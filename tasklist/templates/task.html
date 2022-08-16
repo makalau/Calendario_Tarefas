@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Lista de Tarefas {% endblock %}
+
+{% block content %}
+<div class="tarefas2" style="background-image: url({% static 'images/jarvis4.jpg' %});">
+    <div class="insert-div" style="padding-bottom: 5px; border-radius: 15px;">
+        <h1 class="task-title" style="color: white; text-shadow: 0px 0px 5px aqua, 0px 0px 5px aqua;">{{task.title}}</h1>
+        <form method="post">
+            {% csrf_token %}
+        <div class="descricao">
+            <p>{{task.description}}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

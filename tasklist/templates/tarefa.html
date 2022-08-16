@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Lista de Tarefas {% endblock %}
+
+{% block content %}
+<div class="tarefas2">
+    <div class="insert-div">
+        <h1 class="task-title">Adicionar Tarefas</h1>
+        <form method="post">
+            {% csrf_token %}
+        <div>
+            <label>Título da Tarefa</label>
+            <input type="text" id="title" name="title">
+        </div>
+        <br>
+        <div>
+            <label>Descrição</label>
+            <textarea name="description" id="description" cols="40" rows="9"></textarea>
+        </div>
+            <div class="botao-reator">
+                <button type="submit" class="botao" style="display: relative;">
+                <img src="{% static 'images/reator.png' %}" alt="">
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
