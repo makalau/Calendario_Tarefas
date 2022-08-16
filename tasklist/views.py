@@ -5,7 +5,7 @@ from .models import Tarefas
 def home(request):
     search = request.GET.get("search")
     if search:
-        consulta = Tarefas.objects.all().filter(title=search)
+        consulta = Tarefas.objects.all().filter(title__icontains=search)
         return render(request, 'index.html', {"consulta": consulta})
     else:
         return render(request, 'index.html')
